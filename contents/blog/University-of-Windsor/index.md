@@ -3,7 +3,6 @@ title: Teaching Assistant / Student Tutor
 date: 2018-09-14
 template: blog
 image: ./image.jpg
-# banner: ./banner.jpg
 description: University of Windsor
 ---
 

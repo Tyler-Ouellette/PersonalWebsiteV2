@@ -3,7 +3,6 @@ title: Injury Management Consultant
 date: 2017-09-1
 template: blog
 image: ./image.png
-# banner: ./banner.jpg
 description: Kinetic Konnection
 ---
 

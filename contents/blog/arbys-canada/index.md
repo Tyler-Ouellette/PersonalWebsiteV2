@@ -3,7 +3,6 @@ title: Manager
 date: 2013-10-13
 template: blog
 image: ./image.png
-# banner: ./banner.jpg
 description: Arby's Canada
 ---
 
