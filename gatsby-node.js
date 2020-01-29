@@ -18,8 +18,8 @@ exports.createPages = ({ graphql, actions }) => {
 
     return graphql(`
         {
-            blog: allMarkdownRemark(
-                filter: { fileAbsolutePath: { regex: "/blog/" } }
+            experience: allMarkdownRemark(
+                filter: { fileAbsolutePath: { regex: "/experience/" } }
             ) {
                 edges {
                     node {
@@ -62,25 +62,27 @@ exports.createPages = ({ graphql, actions }) => {
             }
             limitPost: site {
                 siteMetadata {
-                    blogItemsPerPage
+                    experienceItemsPerPage
                     portfolioItemsPerPage
                 }
             }
         }
     `).then(result => {
-        const blogPosts = result.data.blog.edges;
+        const experiencePosts = result.data.experience.edges;
 
-        const blogPostsPerPage =
-            result.data.limitPost.siteMetadata.blogItemsPerPage;
-        const numBlogPages = Math.ceil(blogPosts.length / blogPostsPerPage);
+        const experiencePostsPerPage =
+            result.data.limitPost.siteMetadata.experienceItemsPerPage;
+        const numBlogPages = Math.ceil(
+            experiencePosts.length / experiencePostsPerPage
+        );
 
         Array.from({ length: numBlogPages }).forEach((_, i) => {
             createPage({
-                path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-                component: path.resolve("./src/templates/blog-list.js"),
+                path: i === 0 ? `/experience` : `/experience/${i + 1}`,
+                component: path.resolve("./src/templates/experience-list.js"),
                 context: {
-                    limit: blogPostsPerPage,
-                    skip: i * blogPostsPerPage,
+                    limit: experiencePostsPerPage,
+                    skip: i * experiencePostsPerPage,
                     numPages: numBlogPages,
                     currentPage: i + 1
                 }
@@ -99,18 +101,18 @@ exports.createPages = ({ graphql, actions }) => {
                 path: i === 0 ? `/portfolio` : `/portfolio/${i + 1}`,
                 component: path.resolve("./src/templates/portfolio-list.js"),
                 context: {
-                    limit: blogPostsPerPage,
-                    skip: i * blogPostsPerPage,
+                    limit: experiencePostsPerPage,
+                    skip: i * experiencePostsPerPage,
                     numPages: numPortfolioItems,
                     currentPage: i + 1
                 }
             });
         });
 
-        result.data.blog.edges.forEach(({ node }) => {
+        result.data.experience.edges.forEach(({ node }) => {
             let template =
                 node.frontmatter.template === undefined
-                    ? "blog"
+                    ? "experience"
                     : node.frontmatter.template;
             createPage({
                 path: node.fields.slug,

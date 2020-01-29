@@ -7,7 +7,7 @@ let siteMetadata = {
     introTag: `JUNIOR FULL STACK DEVELOPER`,
     description: `Never stop learning. `,
     author: `Tyler Ouellette`,
-    blogItemsPerPage: 10,
+    experienceItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
     switchTheme: true,
@@ -22,7 +22,7 @@ let siteMetadata = {
         },
         {
             name: "EXPERIENCE",
-            url: "/blog"
+            url: "/experience"
         },
         {
             name: "PORTFOLIO",

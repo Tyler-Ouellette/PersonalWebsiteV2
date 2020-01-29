@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import SEO from "../components/seo";
 import SocialLinks from "../components/sociallinks";
 import PortfolioList from "../components/list-portfolio";
-import BlogList from "../components/list-blog";
+import BlogList from "../components/list-experience";
 import Contact from "../components/contact";
 import "../style/wall.less";
 

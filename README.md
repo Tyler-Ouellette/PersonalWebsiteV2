@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/version-1.1.1-green.svg) ![](https://img.shields.io/badge/License-MIT-orange.svg)
 
-Elemental is a portfolio template suitable for artists, photographers, designers etc. With the starter you can create blog posts, portfolio posts an miscellaneous posts (such as privacy-policy).
+Elemental is a portfolio template suitable for artists, photographers, designers etc. With the starter you can create experience posts, portfolio posts an miscellaneous posts (such as privacy-policy).
 
 **[Live Demo](https://elemental.netlify.com)** | **[Theme](https://github.com/akzhy/gatsby-theme-elemental)**
 
@@ -40,7 +40,7 @@ let siteMetadata = {
     introTag: `PHOTOGRAPHER | VIDEOGRAPHER`, // Intro tag shown below title
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
     author: `@_akzhy`,
-    blogItemsPerPage: 10,
+    experienceItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true, // Whether to enable the darkmode. Change to false if you want the light mode
     switchTheme: true, // Whether to show a switch theme button on the navbar
@@ -55,8 +55,8 @@ let siteMetadata = {
             url: "/about"
         },
         {
-            name: "BLOG",
-            url: "/blog"
+            name: "EXPERIENCE",
+            url: "/experience"
         },
         {
             name: "PORTFOLIO",
@@ -108,9 +108,9 @@ let siteMetadata = {
 };
 ```
 
-#### Creating new blog posts.
+#### Creating new experience posts.
 
-Open the `contents/blog` folder and create a new folder with the name you wish to see as the URL. Inside the folder create an `index.md` file and also include any files you wish to add.
+Open the `contents/experience` folder and create a new folder with the name you wish to see as the URL. Inside the folder create an `index.md` file and also include any files you wish to add.
 
 The frontmatter should be of the below structure
 
@@ -118,14 +118,14 @@ The frontmatter should be of the below structure
 ---
 title: Title of your post
 date: 2019-06-29 <-- Date should be in the given format
-template: blog <-- The template you wish to use. "blog" for blog posts
+template: experience <-- The template you wish to use. "experience" for experience posts
 image: ./image.jpg <-- Image shown on the list pages and also used as open graph image
-banner: ./banner.jpg <-- Banner shown in the blog post
+banner: ./banner.jpg <-- Banner shown in the experience post
 description: The description shown in the listing page. Also used for SEO description.
 ---
 ```
 
-If you don't want the blog section, simply delete everything inside the `contents/blog` folder. (Do not delete the folder itself)
+If you don't want the experience section, simply delete everything inside the `contents/experience` folder. (Do not delete the folder itself)
 
 #### Creating new portfolio posts.
 
@@ -137,7 +137,7 @@ The frontmatter should be of the below structure
 ---
 title: Title of your post
 date: 2019-06-29 <-- Date should be in the given format
-template: blog <-- The template you wish to use. "blog" for blog posts
+template: experience <-- The template you wish to use. "experience" for experience posts
 image: ./image.jpg <-- Image shown on the list pages and also used as open graph image
 description: The description shown in the listing page. Also used for SEO description.
 ---
