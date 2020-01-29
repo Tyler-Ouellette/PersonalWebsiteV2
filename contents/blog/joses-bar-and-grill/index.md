@@ -3,7 +3,7 @@ title: Line Cook
 date: 2015-08-16
 template: blog
 image: ./image.png
-banner: ./banner.jpg
+# banner: ./banner.jpg
 description: Jose's Bar and Grill
 ---
 

@@ -3,7 +3,7 @@ let siteMetadata = {
     capitalizeTitleOnHome: true,
     logo: `/images/tLogo.png`,
     icon: `/images/tLogo.png`,
-    titleImage: `/images/wall2.jpg`,
+    titleImage: `/images/wall.jpg`,
     introTag: `JUNIOR FULL STACK DEVELOPER`,
     description: `Never stop learning. `,
     author: `Tyler Ouellette`,

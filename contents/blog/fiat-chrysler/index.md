@@ -3,7 +3,7 @@ title: Temporary Part-Time Employee
 date: 2018-06-25
 template: blog
 image: ./image.jpg
-banner: ./banner.jpg
+# banner: ./banner.jpg
 description: Fiat Chrysler
 ---
 

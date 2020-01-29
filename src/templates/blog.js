@@ -18,7 +18,7 @@ export default function({ data }) {
             />
             <div className="container">
                 <article className="blog-post">
-                    {data.markdownRemark.frontmatter.banner != null && (
+                    {/* {data.markdownRemark.frontmatter.banner != null && (
                         <div className="banner">
                             <Img
                                 fluid={
@@ -27,7 +27,7 @@ export default function({ data }) {
                                 }
                             />
                         </div>
-                    )}
+                    )} */}
                     <div className="head text-primary">
                         <h1>{data.markdownRemark.frontmatter.title}</h1>
                         <p className="post-date">
@@ -62,15 +62,6 @@ export const query = graphql`
                     publicURL
                     childImageSharp {
                         fluid(maxWidth: 1000) {
-                            srcSet
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-                banner {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxHeight: 600, maxWidth: 1920) {
                             srcSet
                             ...GatsbyImageSharpFluid
                         }

@@ -2,7 +2,6 @@
 
 ![](https://img.shields.io/badge/version-1.1.1-green.svg) ![](https://img.shields.io/badge/License-MIT-orange.svg)
 
-
 Elemental is a portfolio template suitable for artists, photographers, designers etc. With the starter you can create blog posts, portfolio posts an miscellaneous posts (such as privacy-policy).
 
 **[Live Demo](https://elemental.netlify.com)** | **[Theme](https://github.com/akzhy/gatsby-theme-elemental)**
@@ -11,7 +10,7 @@ Elemental is a portfolio template suitable for artists, photographers, designers
 
 You will need node and [Gatsby](https://www.gatsbyjs.org/tutorial/part-zero/) installed.
 
-Start the project by 
+Start the project by
 
 ```
 gatsby new project-name https://github.com/akzhy/gatsby-starter-elemental
@@ -35,7 +34,7 @@ Almost all features of this starter are editable. In order to personalize, open 
 let siteMetadata = {
     title: `Elemental`, // Title of your webpage
     capitalizeTitleOnHome: true, // Whether to capitalize the letter on homepage
-    logo: `/images/logo.png`, // Logo 
+    logo: `/images/logo.png`, // Logo
     icon: `/images/icon.png`, // Favicon, shown in the browsers "tab"
     titleImage: `/images/wall.jpg`, // The main title is filled with an image.
     introTag: `PHOTOGRAPHER | VIDEOGRAPHER`, // Intro tag shown below title
@@ -46,7 +45,8 @@ let siteMetadata = {
     darkmode: true, // Whether to enable the darkmode. Change to false if you want the light mode
     switchTheme: true, // Whether to show a switch theme button on the navbar
     // The links shown on the navbar and footer, follow the same structure to add or remove more items.
-    navLinks: [{
+    navLinks: [
+        {
             name: "HOME",
             url: "/"
         },
@@ -68,12 +68,15 @@ let siteMetadata = {
         }
     ],
     // Same as navbar links, except these are shown on the footer
-    footerLinks: [{
-        name: "PRIVACY POLICY",
-        url: "/privacy-policy"
-    }],
+    footerLinks: [
+        {
+            name: "PRIVACY POLICY",
+            url: "/privacy-policy"
+        }
+    ],
     // Your social profile links. The icons of the given social medias are available in the static folder. If you are adding a new item, include the icon in the static/images folder.
-    social: [{
+    social: [
+        {
             name: "Facebook",
             icon: "/images/Facebook.svg",
             url: "#"
@@ -102,8 +105,7 @@ let siteMetadata = {
         phone: "000-000-0000",
         address: "1234 \nLocation \nLocation"
     }
-}
-
+};
 ```
 
 #### Creating new blog posts.
@@ -119,7 +121,7 @@ date: 2019-06-29 <-- Date should be in the given format
 template: blog <-- The template you wish to use. "blog" for blog posts
 image: ./image.jpg <-- Image shown on the list pages and also used as open graph image
 banner: ./banner.jpg <-- Banner shown in the blog post
-description: The description shown in the listing page. Also used for SEO description. 
+description: The description shown in the listing page. Also used for SEO description.
 ---
 ```
 
@@ -137,7 +139,7 @@ title: Title of your post
 date: 2019-06-29 <-- Date should be in the given format
 template: blog <-- The template you wish to use. "blog" for blog posts
 image: ./image.jpg <-- Image shown on the list pages and also used as open graph image
-description: The description shown in the listing page. Also used for SEO description. 
+description: The description shown in the listing page. Also used for SEO description.
 ---
 ```
 
@@ -161,12 +163,6 @@ These posts follow the URL structure of `http://example.com/miscellaneous-post/`
 
 The "About" page is created as a miscellaneous post.
 
-
 ## Contributing
 
 Any kind of contributions are welcome. Bump the version and create a PR.
-
-
-
-
-
