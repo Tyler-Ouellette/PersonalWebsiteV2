@@ -1,9 +1,14 @@
 ---
-title: About
+title: About Me
 template: basepage
 image: ./resumePhoto.JPEG
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I'm a student at the University of Windsor in Honours of Applied Computing for University Graduates program and I will graduate May 2020. I currently have a degree in Human Kinetics (Kinesiology) specializing in Movement Science. I had worked full-time in the field for a year and realized I wanted a change. I've now fallen in love with computer science, web development and security.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I love to build things and learn new things.
+
+## Hobbies
+
+-   Snowboarding
+-   Chess

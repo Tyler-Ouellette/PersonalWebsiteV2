@@ -16,7 +16,7 @@ export default function({ data }) {
             "November",
             "December"
         ],
-        date = d.getDate(),
+        // date = d.getDate(),
         month = d.getMonth(),
         year = d.getFullYear();
     return (

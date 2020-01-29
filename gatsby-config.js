@@ -3,7 +3,7 @@ let siteMetadata = {
     capitalizeTitleOnHome: true,
     logo: `/images/tLogo.png`,
     icon: `/images/tLogo.png`,
-    titleImage: `/images/wall.jpg`,
+    titleImage: `/images/wall2.jpg`,
     introTag: `JUNIOR FULL STACK DEVELOPER`,
     description: `Never stop learning. `,
     author: `Tyler Ouellette`,
@@ -52,7 +52,8 @@ let siteMetadata = {
         {
             name: "Gmail",
             icon: "/images/gmail.svg",
-            url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ouellette.tyler@hotmail.com"
+            url:
+                "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ouellette.tyler@hotmail.com"
         },
         // {
         //     name: "Instagram",
