@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: ABOUT ME
 template: basepage
 image: ./resumePhoto.JPEG
 ---
