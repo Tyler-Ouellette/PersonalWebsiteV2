@@ -1,10 +1,10 @@
 ---
-title: Arby's Canada
-date: 2019-06-29
+title: Manager
+date: 2013-10-13
 template: blog
-image: ./image.jpg
+image: ./image.png
 banner: ./banner.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Arby's Canada
 ---
 
 ![image](./image.jpg)

@@ -21,7 +21,7 @@ export default function({ data }) {
         year = d.getFullYear();
     return (
         <span>
-            {date} {months[month]} {year}
+            {months[month]} {year}
         </span>
     );
 }

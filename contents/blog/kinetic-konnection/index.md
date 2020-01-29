@@ -1,10 +1,10 @@
 ---
-title: Kinetic Konnection
-date: 2019-06-29
+title: Injury Management Consultant
+date: 2017-09-1
 template: blog
-image: ./image.jpg
+image: ./image.png
 banner: ./banner.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Kinetic Konnection
 ---
 
 ![image](./image.jpg)

@@ -1,10 +1,10 @@
 ---
-title: Fiat Chrysler
-date: 2019-06-29
+title: Temporary Part-Time Employee
+date: 2018-06-25
 template: blog
 image: ./image.jpg
 banner: ./banner.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Fiat Chrysler
 ---
 
 ![image](./image.jpg)
