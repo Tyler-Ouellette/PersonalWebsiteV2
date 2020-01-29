@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import LatestPosts from "../components/experienceposts-latest";
 import SEO from "../components/seo";
 import Date from "../components/date";
 import "../style/experience-singlepage.less";
