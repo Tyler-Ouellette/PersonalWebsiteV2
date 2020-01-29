@@ -1,12 +1,12 @@
 let siteMetadata = {
-    title: `Elemental`,
+    title: `Tyler Ouellette`,
     capitalizeTitleOnHome: true,
-    logo: `/images/logo.png`,
-    icon: `/images/icon.png`,
+    logo: `/images/tLogo.png`,
+    icon: `/images/tLogo.png`,
     titleImage: `/images/wall.jpg`,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-    author: `@_akzhy`,
+    introTag: `JUNIOR FULL STACK DEVELOPER`,
+    description: `Never stop learning. `,
+    author: `Tyler Ouellette`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
@@ -21,7 +21,7 @@ let siteMetadata = {
             url: "/about"
         },
         {
-            name: "BLOG",
+            name: "EXPERIENCE",
             url: "/blog"
         },
         {
@@ -40,38 +40,58 @@ let siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental"
+            url: "https://github.com/tyler-ouellette"
         }
     ],
     social: [
         {
-            name: "Facebook",
-            icon: "/images/Facebook.svg",
-            url: "#"
+            name: "Github",
+            icon: "/images/Github.svg",
+            url: "https://github.com/tyler-ouellette"
         },
         {
-            name: "Twitter",
-            icon: "/images/Twitter.svg",
-            url: "#"
+            name: "Gmail",
+            icon: "/images/gmail.svg",
+            url: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ouellette.tyler@hotmail.com"
+        },
+        // {
+        //     name: "Instagram",
+        //     icon: "/images/Instagram.svg",
+        //     url: "#"
+        // },
+        // {
+        //     name: "Youtube",
+        //     icon: "/images/youtube.svg",
+        //     url: "#"
+        // },
+        // {
+        //     name: "Twitter",
+        //     icon: "/images/twitter.svg",
+        //     url: "#"
+        // },
+        // {
+        //     name: "facebook",
+        //     icon: "/images/facebook.svg",
+        //     url: "#"
+        // },
+        {
+            name: "Resume",
+            icon: "/images/resume.svg",
+            url: "/images/Updated_Resume.pdf"
         },
         {
-            name: "Instagram",
-            icon: "/images/Instagram.svg",
-            url: "#"
-        },
-        {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
-            url: "#"
+            name: "LinkedIn",
+            icon: "/images/linkedIn.svg",
+            url: "https://www.linkedin.com/in/tyler-ouellette14/"
         }
     ],
     contact: {
         /* Leave the below value completely empty (no space either) if you don't want a contact form. */
         api_url: "./test.json",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation"
+        description: `Please, feel free to contact me for job inquiries.`,
+        mail: "ouellette.tyler@hotmail.com",
+        phone: "519 995-6808",
+        address: "From: Windsor, Ontario"
     }
 };
 

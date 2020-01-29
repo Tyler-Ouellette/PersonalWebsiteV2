@@ -17,8 +17,8 @@ function Header() {
         <Helmet>
             <link
                 rel="icon"
-                href={query.site.siteMetadata.icon}
-                type="image/png"
+                href={query.site.siteMetadata.t}
+                type="image/jpg"
             />
             <link
                 rel="stylesheet"

@@ -27,6 +27,10 @@ export default function({ data }) {
                                             data.markdownRemark.frontmatter
                                                 .image.childImageSharp.fluid
                                         }
+                                        style={{
+                                            "border-radius": "50%"
+                                        }}
+                                      
                                     />
                                 </div>
                             </div>

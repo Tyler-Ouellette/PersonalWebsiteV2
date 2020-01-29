@@ -1,7 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Logo from "./logo";
-import Navlinks from "./navlinks";
 import FooterLinks from "./footer-links";
 import "../style/footer.less";
 
@@ -24,9 +23,7 @@ export default function() {
                         <Logo />
                     </Link>
                 </div>
-                <div className="navlinks text-secondary">
-                    <Navlinks />
-                </div>
+                
                 <div
                     className="navlinks text-secondary"
                     style={{ marginTop: "20px" }}
