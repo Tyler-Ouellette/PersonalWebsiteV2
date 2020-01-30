@@ -1,12 +1,15 @@
 ---
-title: Programmer Dad Jokes
+title: Dad Jokes For Programmers
 description: A website for programmers who love a good dad joke or programmer joke.
-date: 2019-06-28
+date: 2019-06-20
 template: portfolio
 image: ./image.png
+website: https://dadjokes.myweb.cs.uwindsor.ca
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##### Visit [https://dadjokes.myweb.cs.uwindsor.ca](https://dadjokes.myweb.cs.uwindsor.ca)
+
+This website was first pitched as an idea as a group project. The group ended up going a different route for the project choice, however I still loved my idea. I then decided over the summer to create the project myself as I did not like the turn out of the group project. The website is created using some simple html, css, javascript, php.
 
 [row][col]
 ![image](./b1.jpg)

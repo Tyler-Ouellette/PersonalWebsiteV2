@@ -1,9 +1,10 @@
 ---
 title: </> DevConnector
 description: Create a developer profile/portfolio, share posts and get help from other developers
-date: 2019-06-28
+date: 2020-01-02
 template: portfolio
 image: ./image.jpeg
+website: https://tylerouellette.herokuapp.com
 ---
 
 DevConnector is a social media platform designed for developers to create a portfolio, share posts and get help from other developers. The design behind the website to be similar with linkedIn, but specifically designed for devlopers. DevConnector is built using the MERN stack.

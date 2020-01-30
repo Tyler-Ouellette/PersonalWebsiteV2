@@ -7,6 +7,8 @@ import PortfolioList from "../components/list-portfolio";
 import BlogList from "../components/list-experience";
 import Contact from "../components/contact";
 import "../style/wall.less";
+import About from "../components/about";
+import SectionTitle from "../components/sectiontitle";
 
 class IndexPage extends React.Component {
     constructor(props) {
@@ -140,6 +142,16 @@ class IndexPage extends React.Component {
                         <SocialLinks />
                     </div>
                 </div>
+
+                <About />
+                <section className="container">
+                    <div className="section-title">
+                        <SectionTitle
+                            title="MY RECENT PROJECTS"
+                            style={{ padding: " 0;" }}
+                        />
+                    </div>
+                </section>
                 <PortfolioList />
                 <BlogList />
                 <Contact />
@@ -157,12 +169,53 @@ export const query = graphql`
                 title
                 capitalizeTitleOnHome
                 titleImage
+                aboutImage
                 introTag
                 description
                 social {
                     name
                     url
                     icon
+                }
+            }
+        }
+        markdownRemark(fields: { slug: { regex: "/about/" } }) {
+            html
+            frontmatter {
+                title
+                description
+                image {
+                    publicURL
+                    childImageSharp {
+                        fluid(maxWidth: 1920) {
+                            srcSet
+                        }
+                        id
+                    }
+                }
+            }
+        }
+        allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/about/" } }
+            limit: 6
+            sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        template
+                        title
+                        description
+                        date
+                        template
+                        image {
+                            id
+                            absolutePath
+                            relativePath
+                            extension
+                            size
+                        }
+                    }
                 }
             }
         }
