@@ -7,42 +7,51 @@ image: ./image.png
 website: https://dadjokes.myweb.cs.uwindsor.ca
 ---
 
-##### Visit [https://dadjokes.myweb.cs.uwindsor.ca](https://dadjokes.myweb.cs.uwindsor.ca)
-
-This website was first pitched as an idea as a group project. The group ended up going a different route for the project choice, however I still loved my idea. I then decided over the summer to create the project myself as I did not like the turn out of the group project. The website is created using some simple html, css, javascript, php.
+This website was first pitched as an idea as a group project. The group ended up going a different route for the project choice, however I still loved my idea. Over the summer, I decided to create the project myself. The website is created using some simple html, css, javascript, php.
 
 [row][col]
-![image](./b1.jpg)
+![image](./image.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Default Theme
 
 [/col][col]
-![image](./b2.jpg)
+![image](./dark.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Dark Theme
+
+[/col][col]
+![image](./light.png)
+
+Light Theme
 
 [/col][/row]
 
 [row][col]
-![image](./w1.jpg)
+![image](./favourites.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Save Jokes to your Favourites
 
 [/col][/row]
 
 [row][col]
-![image](./l1.jpg)
+![image](./addjoke.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
-
-[/col][col]
-![image](./l2.jpg)
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Submit your own Joke
 
 [/col][col]
-![image](./l3.jpg)
+![image](./contact.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit
+Contact Page
+
+[/col][/row]
+[row][col]
+![image](./profile.png)
+
+User Profile Page
+
+[/col][col]
+![image](./settings.png)
+
+Settings Page
 
 [/col][/row]

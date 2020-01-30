@@ -26,7 +26,15 @@ export default function({ data }) {
                     <div className="head text-primary">
                         <h1>{data.markdownRemark.frontmatter.title}</h1>
                         <p className="post-date">
-                            <Date data={data.markdownRemark.frontmatter.date} />
+                            <h5>
+                                <a
+                                    href={
+                                        data.markdownRemark.frontmatter.website
+                                    }
+                                >
+                                    {data.markdownRemark.frontmatter.website}
+                                </a>
+                            </h5>
                         </p>
                     </div>
                     <div className="content row flex">
@@ -53,6 +61,7 @@ export const query = graphql`
                 title
                 date
                 description
+                website
                 image {
                     publicURL
                     childImageSharp {
