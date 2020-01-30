@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Img from "gatsby-image";
 import SEO from "../components/seo";
 import "../style/basepage.less";
+import SectionTitle from "../components/sectiontitle";
 
 export default function({ data }) {
     return (
@@ -30,7 +31,6 @@ export default function({ data }) {
                                         style={{
                                             "border-radius": "50%"
                                         }}
-                                      
                                     />
                                 </div>
                             </div>
