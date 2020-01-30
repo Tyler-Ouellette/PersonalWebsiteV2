@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import BlogItems from "../components/items-experience";
+import ExperienceItems from "../components/items-experience";
 import SectionTitle from "../components/sectiontitle";
 import Pagination from "../components/pagination";
 import SEO from "../components/seo";
@@ -15,7 +15,7 @@ class BlogList extends React.Component {
                     <div className="section-title">
                         <SectionTitle title="EXPERIENCE" />
                     </div>
-                    <BlogItems data={query} />
+                    <ExperienceItems data={query} />
                     <Pagination
                         pageContext={this.props.pageContext}
                         type="experience"

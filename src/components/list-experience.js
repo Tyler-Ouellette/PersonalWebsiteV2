@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import BlogItems from "./items-experience";
+import ExperienceItems from "./items-experience";
 import SectionTitle from "./sectiontitle";
 
 export default function() {
@@ -44,7 +44,7 @@ export default function() {
                 <div className="section-title">
                     <SectionTitle title="EXPERIENCE" />
                 </div>
-                <BlogItems data={query} />
+                <ExperienceItems data={query} />
             </section>
         );
     } else {
