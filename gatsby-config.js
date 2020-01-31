@@ -151,6 +151,7 @@ module.exports = {
             options: {
                 strictMath: true
             }
-        }
+        },
+        `gatsby-plugin-netlify`
     ]
 };
