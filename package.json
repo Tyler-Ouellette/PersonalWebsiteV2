@@ -4,7 +4,8 @@
     "version": "0.1.0",
     "author": "Tyler Ouellette",
     "dependencies": {
-        "gatsby": "^2.10.4",
+        "axios": "^0.19.2",
+        "gatsby": "^2.19.12",
         "gatsby-custom-md": "^1.0.2",
         "gatsby-image": "^2.2.3",
         "gatsby-plugin-less": "^2.1.0",
