@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { PaperPlane, Mapmarker, Mobile, Envelope, Loading } from "./icons";
 import SocialLinks from "./sociallinks";
 import "../style/contact.less";
+import axios from "axios";
 
 class Contact extends React.Component {
     constructor(props) {
@@ -40,10 +41,16 @@ class Contact extends React.Component {
                 message = encodeURI(this.dataMessage.value),
                 body = `name=${name}&email=${email}&message=${message}`;
 
-            fetch("http://localhost/local/test.json", {
-                method: "post",
-                body: body
-            })
+            axios
+                .post("http://https://api.postmarkapp.com/email", {
+                    body: body
+                })
+                // ;
+
+                // fetch("http://localhost/local/test.json", {
+                //     method: "post",
+                //     body: body
+                // })
                 .then(function(res) {
                     return res.json();
                 })
