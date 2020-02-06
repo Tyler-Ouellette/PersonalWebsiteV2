@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import Img from "gatsby-image";
 import SEO from "../components/seo";
 import "../style/basepage.less";
-import SectionTitle from "../components/sectiontitle";
 
 export default function({ data }) {
     return (
