@@ -57,11 +57,30 @@ class Contact extends React.Component {
                 ]
             };
 
-            axios
-                .post("http://https://api.postmarkapp.com/email", {
-                    body: json
-                })
+            // axios
+            //     .post("http://https://api.postmarkapp.com/email", {
+            //         body: json
+            //     })
 
+            const instance = axios
+                .create({
+                    url: "https://api.postmarkapp.com/email",
+                    method: "post",
+                    dataType: "json",
+                    data: {
+                        From: { email },
+                        Subject: "Resume Website Contact",
+                        HtmlBody: { message },
+                        TextBody: { message },
+                        Headers: [
+                            {
+                                Name: "X-Postmark-Server-Token",
+                                Value: `${process.env.TOKEN}`
+                            }
+                        ]
+                    },
+                    To: "ouellette.tyler@hotmail.com"
+                })
                 // fetch("http://localhost/local/test.json", {
                 //     method: "post",
                 //     body: body
