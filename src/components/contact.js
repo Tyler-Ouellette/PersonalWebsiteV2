@@ -31,61 +31,6 @@ class Contact extends React.Component {
 
     handleSubmit(event) {
         // event.preventDefault();
-        if (!this.state.submitDisabled) {
-            // this.setState({
-            //     submitDisabled: true,
-            // });
-
-            let name = encodeURI(this.dataName.value),
-                email = encodeURI(this.dataEmail.value),
-                message = encodeURI(this.dataMessage.value);
-            console.log(name, email, message);
-            // body = `name=${name}&email=${email}&message=${message}`;
-
-            // const html = convertToHtml(message);
-
-            // console.log(instance.defaults);
-
-            // axios
-            //     .post('https://api.postmarkapp.com/email', { instance })
-
-            //     .then(function(res) {
-            //         return res.json();
-            //     })
-            //     .then(
-            //         result => {
-            //             this.setState({
-            //                 submitDisabled: false,
-            //             });
-            //             this.resMessage.style.opacity = 1;
-            //             if (result.response === 'error') {
-            //                 this.resMessage.innerHTML = 'There was an error in sending the message';
-            //                 this.resMessage.classList.add('color-error');
-            //             } else {
-            //                 this.resMessage.innerHTML = 'Message sent succesfully';
-            //                 this.resMessage.classList.remove('color-error');
-            //             }
-            //             this.dataName.value = '';
-            //             this.dataEmail.value = '';
-            //             this.dataMessage.value = '';
-            //             let _this = this;
-            //             setTimeout(function() {
-            //                 _this.resMessage.style.opacity = 0;
-            //             }, 5000);
-            //         },
-            //         error => {
-            //             this.resMessage.innerHTML = 'Message sent succesfully';
-            //             this.resMessage.classList.remove('color-error');
-            //             this.setState({
-            //                 submitDisabled: false,
-            //             });
-            //             let _this = this;
-            //             setTimeout(function() {
-            //                 _this.resMessage.style.opacity = 0;
-            //             }, 5000);
-            //         }
-            //     );
-        }
     }
 
     componentDidMount() {
