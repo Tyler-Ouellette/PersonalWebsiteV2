@@ -44,7 +44,7 @@ class Contact extends React.Component {
 
             // const html = convertToHtml(message);
 
-            console.log(instance.defaults);
+            // console.log(instance.defaults);
 
             // axios
             //     .post('https://api.postmarkapp.com/email', { instance })
