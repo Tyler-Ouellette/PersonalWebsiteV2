@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import { PaperPlane, Mapmarker, Mobile, Envelope, Loading } from './icons';
 import SocialLinks from './sociallinks';
 import '../style/contact.less';
-import axios from 'axios';
 
 class Contact extends React.Component {
     constructor(props) {
