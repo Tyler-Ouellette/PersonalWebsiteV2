@@ -111,8 +111,13 @@ class Contact extends React.Component {
                 <div className={'row' + (this.showContactForm ? '' : ' no-form')} ref={c => (this.contactArea = c)}>
                     {this.showContactForm && (
                         <div className="col s12 m6">
-                            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-                                <input type="hidden" name="bot-field" />
+                            <form
+                                name="contact"
+                                form-name="contact"
+                                method="post"
+                                data-netlify="true"
+                                data-netlify-honeypot="bot-field">
+                                <input type="hidden" name="form-name" value="contact" />
                                 <div className="field">
                                     <label>
                                         <span className="label text-tertiary">Name</span>
