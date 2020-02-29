@@ -135,7 +135,7 @@ class Contact extends React.Component {
                                 </div>
                                 <div className="field">
                                     <label>
-                                        <span className="label text-tertiary">Email</span>
+                                        <span className="label text-tertiary">Your Email</span>
                                         <div className="input-border">
                                             <input
                                                 type="email"
