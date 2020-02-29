@@ -32,9 +32,9 @@ class Contact extends React.Component {
     handleSubmit(event) {
         // event.preventDefault();
         if (!this.state.submitDisabled) {
-            this.setState({
-                submitDisabled: true,
-            });
+            // this.setState({
+            //     submitDisabled: true,
+            // });
 
             let name = encodeURI(this.dataName.value),
                 email = encodeURI(this.dataEmail.value),
