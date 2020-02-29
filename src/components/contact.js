@@ -44,45 +44,11 @@ class Contact extends React.Component {
 
             // const html = convertToHtml(message);
 
-            // const instance = axios.create({
-            //     url: 'https://api.postmarkapp.com',
-            //     method: 'POST',
-            //     headers: {
-            //         'X-Postmark-Server-Token': '49c4787c-b74d-4518-9f9d-94874cea767e',
-            //         'Access-Control-Allow-Origin': '*',
-            //         Vary: 'Origin',
-            //         'Content-Type': 'application/json',
-            //         Accept: 'application/json',
-            //     },
-            //     dataType: 'application/json',
-            //     data: {
-            //         From: { name, email },
-            //         To: 'ouellette.tyler@hotmail.com',
-            //         Subject: 'Contact Form Resume Site',
-            //         HtmlBody: { message },
-            //         TextBody: { message },
-            //         ReplyTo: { email },
-            //         Headers: [
-            //             { Name: 'X-Postmark-Server-Token', Value: '49c4787c-b74d-4518-9f9d-94874cea767e' },
-            //             { Name: 'Access-Control-Allow-Origin', Value: '*' },
-            //             { Name: 'Vary', Value: 'Origin' },
-            //         ],
-            //         TrackOpens: true,
-            //         TrackLinks: 'HtmlOnly',
-            //     },
-            // });
-
             console.log(instance.defaults);
 
             axios
                 .post('https://api.postmarkapp.com/email', { instance })
-                // .post('https://api.postmarkapp.com/email', instance.defaults, {
-                //     'X-Postmark-Server-Token': '49c4787c-b74d-4518-9f9d-94874cea767e',
-                //     'Access-Control-Allow-Origin': '*',
-                //     Vary: 'Origin',
-                //     'Content-Type': 'application/json',
-                //     Accept: 'application/json',
-                // })
+
                 .then(function(res) {
                     return res.json();
                 })
