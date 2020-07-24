@@ -1,5 +1,5 @@
 ---
-title: ABOUT ME
+title: ABOUT
 template: basepage
 image: ./resumePhoto.JPEG
 ---
@@ -17,3 +17,6 @@ I'm a student at the University of Windsor in Honours of Applied Computing for U
 -   GraphQL
 -   Vue
 -   PHP
+-   Jenkins
+-   Docker
+-   Kubernetes
