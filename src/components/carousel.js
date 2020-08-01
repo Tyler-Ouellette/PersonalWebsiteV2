@@ -18,10 +18,8 @@ export default function() {
     return (
         // Container with size #of elements % numColumns === 0 for even number of entries so no holes
         <div className="carousel">
-            <div className="logo">
-                <Link to="/" title={query.site.siteMetadata.title}>
+            <div className="LogoWrapper">
                     <Logo />
-                </Link>
             </div>
         </div>
         //Each Element will need a logo along with the name on hover. Along with pop up scale animation
