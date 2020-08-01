@@ -1,42 +1,45 @@
-#experience{
-	.item{
+#experience {
+	.row {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.item {
 		padding: 30px;
 
-		.box{
+		.box {
 			position: relative;
 
-			.image{
+			.image {
 				position: relative;
 			}
 
-			.content{
+			.content {
 				padding: 20px 10px;
 
-				h3{
+				h3 {
 					font-size: 32px;
 				}
 
-				p{
+				p {
 					margin: 15px 0;
 				}
 
-				.date{
+				.date {
 					display: flex;
-    				align-items: center;
+					align-items: center;
 
-					.icon{
+					.icon {
 						margin-right: 10px;
 					}
 				}
-
 			}
 		}
 	}
-
 }
 
-@media only screen and (max-width: 800px){
-	#experience .item{
+@media only screen and (max-width: 800px) {
+	#experience .item {
 		padding: 10px;
 	}
 }
