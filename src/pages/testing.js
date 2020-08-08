@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-
+import Docker from './../../assets/docker.svg';
+import Gatsby from './../../assets/gatsby.svg';
+import Jenkins from './../../assets/jenkins.svg';
+import Kubernetes from './../../assets/kubernetes.svg';
+import Laravel from './../../assets/laravel.svg';
+import Mongodb from './../../assets/mongodb.svg';
+import Nodejs from './../../assets/nodejs.svg';
+import Php from './../../assets/php.svg';
+import Vue from './../../assets/vue.svg';
+import Css from './../../assets/css.svg';
+import '../style/testing.less';
 // export const squareImage = graphql`
 //     fragment squareImage on File {
 //         childImageSharp {
@@ -74,28 +84,35 @@ import Img from 'gatsby-image';
 //         </div>
 //     );
 // };
-export default () => {
+export default props => {
     const data = useStaticQuery(graphql`
         query {
-            svg {
-                content # SVG content optimized with SVGO
-                originalContent # Original SVG content
-                dataURI # Optimized SVG as compact dataURI
-                absolutePath #
-                relativePath #
-            }
-            file {
-                contentType
-                url
-                fileName
-                details {
-                    image {
-                        width
-                        height
+            # svg {
+            #     content # SVG content optimized with SVGO
+            #     originalContent # Original SVG content
+            #     dataURI # Optimized SVG as compact dataURI
+            #     absolutePath #
+            #     relativePath #
+            # }
+            # file {
+            #     url
+            #     fileName
+            #     details {
+            #         image {
+            #             width
+            #             height
+            #         }
+            #     }
+            # }
+            site {
+                siteMetadata {
+                    logos {
+                        name
+                        logo
                     }
                 }
             }
-            allFile(filter: { relativeDirectory: { eq: "myTech" } }) {
+            allFile(filter: { relativeDirectory: { eq: "assets" } }) {
                 edges {
                     node {
                         base
@@ -121,8 +138,28 @@ export default () => {
         }
     `);
 
+    // const numTech = this.query.logos.length();
+    // for (numColumns = 0; numColumns < numTech; numColumns++) {
+    //     if (numTech % numColumns !== 0) {
+    //         numColumns++;
+    //     } else {
+    //         break;
+    //         // grid-template-columns: repeat(increment, minmax(100px, 1fr));
+    //     }
+    // }
+
     return (
-        <div>
+        <div className="myTech">
+            <Css />
+            <Docker />
+            <Gatsby />
+            <Jenkins />
+            <Kubernetes />
+            <Laravel />
+            <Mongodb />
+            <Nodejs />
+            <Php />
+            <Vue />
             {data.allFile.edges.map(image => (
                 <Img
                     fluid={image.node.childImageSharp.fluid}
@@ -132,24 +169,3 @@ export default () => {
         </div>
     );
 };
-
-// {
-//   svg {
-//     content # SVG content optimized with SVGO
-//     originalContent # Original SVG content
-//     dataURI # Optimized SVG as compact dataURI
-//     absolutePath #
-//     relativePath #
-//   }
-//   file {
-//     contentType
-//     url
-//     fileName
-//     details {
-//       image {
-//         width
-//         height
-//       }
-//     }
-//   }
-// }

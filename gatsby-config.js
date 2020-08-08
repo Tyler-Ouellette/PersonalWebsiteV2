@@ -205,11 +205,26 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `assets`,
+                path: `${__dirname}/assets/`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-less`,
             options: {
                 strictMath: true,
             },
         },
         `gatsby-plugin-netlify`,
+        {
+            resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /assets/,
+                },
+            },
+        },
     ],
 };
