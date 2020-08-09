@@ -3,6 +3,7 @@ import SectionTitle from './sectiontitle';
 import { StaticQuery, graphql } from 'gatsby';
 import '../style/contact.less';
 import Img from 'gatsby-image';
+import MyTech from './MyTech';
 
 class About extends React.Component {
     render() {
@@ -29,6 +30,7 @@ class About extends React.Component {
                                     dangerouslySetInnerHTML={{
                                         __html: this.props.about.html,
                                     }}></div>
+                                <MyTech />
                             </div>
                         </article>
                     </div>
