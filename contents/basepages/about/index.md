@@ -1,5 +1,5 @@
 ---
-title: ABOUT MEat
+title: ABOUT ME
 template: basepage
 image: ./resumePhoto.JPEG
 ---
