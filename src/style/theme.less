@@ -1,7 +1,7 @@
 @background: #fff;
 @textPrimary: #223364;
 @textSecondary: #6888DF;
-@textTertiary:#848EA8;
+@textTertiary: #848EA8;
 @textNormal: #333;
 @colorPrimary: @textSecondary;
 @colorSecondary: #F55555;
@@ -10,109 +10,117 @@
 @fontBold: 'Work Sans', sans-serif;
 @fontNormal: "Poppins", sans-serif;
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-
-
-body{
+body {
 	background: @background;
 	font-family: @fontNormal;
 	font-size: 18px;
 	color: @textNormal;
 }
 
-nav{
+nav {
 	background: @background;
 
-	&:after{
+	&:after {
 		content: "";
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
 		height: 2px;
-		background: linear-gradient(to left,@colorPrimary,@colorSecondary);
+		background: linear-gradient(to left, @colorPrimary, @colorSecondary);
 		opacity: 0;
 		transition: opacity .35s;
 	}
 
-	&.scrolled:after{
+	&.scrolled:after {
 		opacity: .2;
 	}
 }
 
 .text-secondary {
-	&, & a{
+	&,
+	& a {
 		color: @textSecondary;
 	}
 }
 
 .text-tertiary {
-	&, & a{
+	&,
+	& a {
 		color: @textTertiary;
 	}
 }
 
-.text-primary{
-	&, & a{
+.text-primary {
+	&,
+	& a {
 		color: @textPrimary;
 	}
 }
 
-.color-primary{
+.color-primary {
 	color: @colorPrimary;
 }
 
-.color-secondary{
+.color-secondary {
 	color: @colorSecondary;
 }
 
-.res-message{
+.res-message {
 	transition: opacity .35s;
 	opacity: 0;
 }
 
-.res-message, .color-success{
+.res-message,
+.color-success {
 	color: @colorSuccess;
 }
 
-.color-error{
+.color-error {
 	color: @colorError;
 }
 
-.wall svg text{
+.wall svg text {
 	font: bold 10px sans-serif;
 	font-family: @fontBold;
 }
 
-#menu-open path{
+#menu-open path {
 	fill: @textSecondary;
 }
 
-.font-bold,h1,h2,h3,h4,h5,h6{
+.font-bold,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: @fontBold;
 }
 
-.btn{
+.btn {
 	height: 50px !important;
 	line-height: 50px !important;
 	font-size: 14px !important;
 	letter-spacing: 1px;
 	margin: 25px 0;
 	padding: 0 45px !important;
-	background-image: linear-gradient(to left,@colorPrimary,@colorSecondary) !important;
+	background-image: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
 	color: #fff !important;
 	border: none !important;
 
-	&.disabled{
+	&.disabled {
 		opacity: .7;
 	}
 }
 
-.overlay-link{
+.overlay-link {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -121,26 +129,25 @@ nav{
 	top: 0;
 }
 
-.pseudo-divider:after{
+.pseudo-divider:after {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 5px;
-	background: linear-gradient(to left,@colorPrimary,@colorSecondary) !important;
+	background: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
 	bottom: -4px;
 	left: 0;
 }
 
-.icon{
+.icon {
 	width: 22px;
 	height: 22px;
 	display: inline-block;
 	vertical-align: middle;
 }
 
-section{
+section {
 	// padding: 60px 0;
-
 
 	svg {
 		display: block;
@@ -153,13 +160,13 @@ section{
 	}
 }
 
-.section-title{
+.section-title {
 	padding: 20px 0;
 	margin-bottom: 35px;
 	text-align: center;
 }
 
-.field-box{
+.field-box {
 	width: 100%;
 	font-size: 20px;
 	background: @background;
@@ -171,176 +178,178 @@ section{
 	resize: none;
 }
 
-.field-box:not(textarea){
+.field-box:not(textarea) {
 	height: 48px !important;
 }
 
-.input-border{
+.input-border {
 	padding: 1px;
 	position: relative;
 
-	&:after{
+	&:after {
 		content: "";
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to left,@colorPrimary,@colorSecondary) !important;
+		background: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
 		border-radius: 5px;
 	}
 }
 
-footer{
-	background: darken(@background,4%);
+footer {
+	background: darken(@background, 4%);
 }
 
-nav ul li a:before{
+nav ul li a:before {
 	background: @colorSecondary;
 }
 
-.sidebar-content{
+.sidebar-content {
 	background: @background;
 }
 
-.pagination ul li{
-
-	a{
+.pagination ul li {
+	a {
 		background: @colorPrimary;
 		color: #fff;
 
-		svg path{
+		svg path {
 			fill: #fff;
 		}
 	}
 
-	&.active{
-		a{
-			background: linear-gradient(to left,@colorPrimary,@colorSecondary);
+	&.active {
+		a {
+			background: linear-gradient(to left, @colorPrimary, @colorSecondary);
 		}
 	}
 }
 
-.fill-primary{
-	&, & path{
+.fill-primary {
+	&,
+	& path {
 		fill: @colorPrimary;
 	}
 }
 
-.fill-secondary{
-	&, & path{
+.fill-secondary {
+	&,
+	& path {
 		fill: @textSecondary;
 	}
 }
 
-.experience-post blockquote{
+.experience-post blockquote {
 	border-left: 3px solid @colorSecondary;
 }
 
-
-.dark-mode{
+.dark-mode {
 	@background: #171B27;
 	@textPrimary: #c5c5c5;
 	@textSecondary: #6888DF;
-	@textTertiary:#848EA8;
+	@textTertiary: #848EA8;
 	@textNormal: #b8b7bf;
 	@colorPrimary: @textSecondary;
 	@colorSecondary: #F55555;
 	@colorError : #F55555;
 	@colorSuccess : #4CAF50;
 
-
-	&{
+	& {
 		background: @background;
 		color: @textNormal;
 	}
 
-	nav{
+	nav {
 		background: @background;
 	}
 
 	.text-secondary {
-		&, & a{
+		&,
+		& a {
 			color: @textSecondary;
 		}
 	}
 
 	.text-tertiary {
-		&, & a{
+		&,
+		& a {
 			color: @textTertiary;
 		}
 	}
 
-	.text-primary{
-		&, & a{
+	.text-primary {
+		&,
+		& a {
 			color: @textPrimary;
 		}
 	}
 
-	.color-primary{
+	.color-primary {
 		color: @colorPrimary;
 	}
 
-	.color-secondary{
+	.color-secondary {
 		color: @colorSecondary;
 	}
 
-	.res-message, .color-success{
+	.res-message,
+	.color-success {
 		color: @colorSuccess;
 	}
 
-	.color-error{
+	.color-error {
 		color: @colorError;
 	}
 
-	.field-box{
+	.field-box {
 		background: @background;
 		color: @textNormal;
 	}
 
-	footer{
-		background: darken(@background,4%);
+	footer {
+		background: darken(@background, 4%);
 	}
 
-	nav ul li a:before{
+	nav ul li a:before {
 		background: @colorSecondary;
 	}
 
-	.btn{
-		background-image: linear-gradient(to left,@colorPrimary,@colorSecondary) !important;
+	.btn {
+		background-image: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
 	}
 
-	.pseudo-divider:after{
-		background: linear-gradient(to left,@colorPrimary,@colorSecondary) !important;
+	.pseudo-divider:after {
+		background: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
 	}
 
-	.sidebar-content{
+	.sidebar-content {
 		background: @background;
 	}
 
-	#menu-open path{
+	#menu-open path {
 		fill: @textSecondary;
 	}
-
 }
 
-div[role="navigation"]{
+div[role="navigation"] {
 	display: none;
 }
 @media only screen and (max-width: 800px) {
-	div[role="navigation"]{
+	div[role="navigation"] {
 		display: block;
 	}
-	.container{
-		width: 95% !important;
+	.container {
+		width: 100% !important;
 	}
 
-	section{
-			padding: 30px 0;
+	section {
+		padding: 30px 0;
 	}
 
 	section svg text {
-	    font: bold 12px sans-serif;
-	    font-family: 'Work Sans', sans-serif;
+		font: bold 8px sans-serif;
+		font-family: 'Work Sans', sans-serif;
 	}
 }

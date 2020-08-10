@@ -14,7 +14,7 @@ import Nodejs from './../../assets/nodejs.svg';
 import ReactLogo from './../../assets/reactLogo.svg';
 import Php from './../../assets/php.svg';
 import Vue from './../../assets/vue.svg';
-import '../style/MyTech.less';
+import '../style/myTech.less';
 
 const MyTech = () => {
     return (
