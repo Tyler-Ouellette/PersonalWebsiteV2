@@ -11,7 +11,7 @@ import Kubernetes from './../../assets/kubernetes.svg';
 import Laravel from './../../assets/laravel.svg';
 import Mongodb from './../../assets/mongodb.svg';
 import Nodejs from './../../assets/nodejs.svg';
-import ReactLogo from './../../assets/reactLogo.svg';
+import ReactLogo from './../../assets/ReactLogo.svg';
 import Php from './../../assets/php.svg';
 import Vue from './../../assets/vue.svg';
 import '../style/myTech.less';
