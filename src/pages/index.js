@@ -110,7 +110,7 @@ class IndexPage extends React.Component {
                 <About />
                 <section className="container">
                     <div className="section-title">
-                        <SectionTitle title="MY RECENT PROJECTS" style={{ padding: ' 0;' }} />
+                        <SectionTitle title="RECENT PROJECTS" style={{ padding: ' 0;' }} />
                     </div>
                 </section>
                 <PortfolioList />

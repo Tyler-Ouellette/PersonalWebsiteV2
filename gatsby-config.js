@@ -97,7 +97,7 @@ let siteMetadata = {
     about: {
         image: '/static/9586108cb6231fd8aa812ccca7df7032/8c675/resumePhoto.jpg',
         html:
-            "<p>I'm a graduate of the University of Windsor in Honours of Applied Computing for University Graduates program as well as a Bachelor's in Human Kinetics (Kinesiology) specializing in Movement Science. I had worked full-time in the field of Kinesiology for a year and realized I wanted a change. I've now fallen in love with computer science, web development and web security. I love to build things and learn new things. I want to eventually get my security+, pentest+, and then GPEN certificates and work as a penetration tester.</p>\n<h6>Here are a few technologies I've been working with recently:</h6>\n<ul>\n<li>HTML &#x26; CSS</li>\n<li>Javascript (ES6+)</li>\n<li>React</li>\n<li>Node</li>\n<li>Express</li>\n<li>Gatsby</li>\n<li>GraphQL</li>\n<li>Vue</li><li>PHP</li>\n<li>Docker</li><li>Kubernetes</li><li>Jenkins</li>\n</ul>",
+            "<p>I'm a graduate of the University of Windsor in Honours of Applied Computing for University Graduates program as well as a Bachelor's in Human Kinetics (Kinesiology) specializing in Movement Science. I had worked full-time in the field of Kinesiology for a year and realized I wanted a change. I've now fallen in love with computer science, web development and web security. I love to build things and learn new things. I want to eventually get my security+, pentest+, and then GPEN certificates and work as a penetration tester.</p>\n<h6>Here are a few technologies I've been working with recently:",
     },
 };
 
@@ -144,11 +144,33 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/static/images/`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `assets`,
+                path: `${__dirname}/assets/`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-less`,
             options: {
                 strictMath: true,
             },
         },
         `gatsby-plugin-netlify`,
+        {
+            resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /assets/,
+                },
+            },
+        },
     ],
 };
