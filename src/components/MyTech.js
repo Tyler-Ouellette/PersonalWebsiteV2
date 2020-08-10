@@ -1,6 +1,4 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
 import Aws from './../../assets/aws.svg';
 import Css from './../../assets/css.svg';
 import Docker from './../../assets/docker.svg';
@@ -16,7 +14,7 @@ import Nodejs from './../../assets/nodejs.svg';
 import ReactLogo from './../../assets/reactLogo.svg';
 import Php from './../../assets/php.svg';
 import Vue from './../../assets/vue.svg';
-import '../style/myTech.less';
+import '../style/MyTech.less';
 
 const MyTech = () => {
     return (
@@ -36,9 +34,9 @@ const MyTech = () => {
             <JsLogo />
             <Kubernetes />
             <Laravel />
-            <p>JavaScript</p>
             <p>HTML5</p>
             <p>Jenkins</p>
+            <p>JavaScript</p>
             <p>Kubernetes</p>
             <p>Laravel</p>
             <Mongodb />
@@ -51,40 +49,8 @@ const MyTech = () => {
             <p>PHP</p>
             <p>React</p>
             <p>Vue</p>
-            {/* {data.allFile.edges.map(image => (
-                <Img
-                    fluid={image.node.childImageSharp.fluid}
-                    alt={image.node.base.split('.')[0]} // only use section of the file extension with the filename
-                />
-            ))} */}
         </div>
     );
 };
 
 export default MyTech;
-
-// export default props => {
-//     const data = useStaticQuery(graphql`
-//         query {
-//             site {
-//                 siteMetadata {
-//                     logos {
-//                         name
-//                         logo
-//                     }
-//                 }
-//             }
-//         }
-//     `);
-
-// const numTech = this.query.logos.length();
-// for (numColumns = 0; numColumns < numTech; numColumns++) {
-//     if (numTech % numColumns !== 0) {
-//         numColumns++;
-//     } else {
-//         break;
-//         // grid-template-columns: repeat(increment, minmax(100px, 1fr));
-//     }
-// }
-
-// };

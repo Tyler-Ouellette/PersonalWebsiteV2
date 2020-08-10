@@ -5,7 +5,7 @@ let siteMetadata = {
     icon: `/images/tLogo.png`,
     titleImage: `/images/wall.jpg`,
     aboutImage: `/images/about.jpeg`,
-    introTag: `JUNIOR FULL STACK DEVELOPER`,
+    introTag: `FULL STACK DEVELOPER / CONSULTANT`,
     description: `Never stop learning. `,
     author: `Tyler Ouellette`,
     experienceItemsPerPage: 10,
@@ -97,62 +97,8 @@ let siteMetadata = {
     about: {
         image: '/static/9586108cb6231fd8aa812ccca7df7032/8c675/resumePhoto.jpg',
         html:
-            "<p>I'm a student at the University of Windsor in Honours of Applied Computing for University Graduates program and I will graduate May 2020. I currently have a degree in Human Kinetics (Kinesiology) specializing in Movement Science. I had worked full-time in the field for a year and realized I wanted a change. I've now fallen in love with computer science, web development and security. I love to build things and learn new things. I want to eventually get my security+, pentest+, and then GPEN certificates and work as a penetration tester.</p>\n<h6>Here are a few technologies I've been working with recently:",
+            "<p>I'm a graduate of the University of Windsor in Honours of Applied Computing for University Graduates program as well as a Bachelor's in Human Kinetics (Kinesiology) specializing in Movement Science. I had worked full-time in the field of Kinesiology for a year and realized I wanted a change. I've now fallen in love with computer science, web development and web security. I love to build things and learn new things. I want to eventually get my security+, pentest+, and then GPEN certificates and work as a penetration tester.</p>\n<h6>Here are a few technologies I've been working with recently:",
     },
-    logos: [
-        {
-            name: 'Gatsby',
-            logo: 'images/gatsby.svg',
-        },
-        {
-            name: 'CSS',
-            logo: 'images/css.svg',
-        },
-        {
-            name: 'Docker',
-            logo: 'images/docker.svg',
-        },
-        {
-            name: 'HTML5',
-            logo: 'images/HTML5.svg',
-        },
-        {
-            name: 'Jenkins',
-            logo: 'images/jenkins.svg',
-        },
-        {
-            name: 'JavaScript',
-            logo: 'images/JSlogo.svg',
-        },
-        {
-            name: 'Kubernetes',
-            logo: 'images/kubernetes.svg',
-        },
-        {
-            name: 'Laravel',
-            logo: 'images/laravel.svg',
-        },
-        {
-            name: 'MongoDB',
-            logo: 'images/mongodb.svg',
-        },
-        {
-            name: 'PHP',
-            logo: 'images/php.svg',
-        },
-        {
-            name: 'React',
-            logo: 'images/React.svg',
-        },
-        {
-            name: 'NodeJS',
-            logo: 'images/nodejs-icon.svg',
-        },
-        {
-            name: 'Vue',
-            logo: 'images/vue.svg',
-        },
-    ],
 };
 
 module.exports = {

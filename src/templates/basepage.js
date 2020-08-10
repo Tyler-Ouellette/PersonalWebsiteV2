@@ -1,9 +1,11 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import Img from "gatsby-image";
-import SEO from "../components/seo";
-import "../style/basepage.less";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import Img from 'gatsby-image';
+import SEO from '../components/seo';
+import '../style/basepage.less';
+import SectionTitle from '../components/sectiontitle';
+import MyTech from '../components/myTech';
 
 export default function({ data }) {
     return (
@@ -13,22 +15,19 @@ export default function({ data }) {
                 title={data.markdownRemark.frontmatter.title}
                 description={data.markdownRemark.frontmatter.description}
             />
-            <div className="container">
+            <section className="container" id="about">
+                <div className="section-title">
+                    <SectionTitle title="ABOUT ME" />
+                </div>
                 <article className="post">
-                    <div className="head text-primary">
-                        <h1>{data.markdownRemark.frontmatter.title}</h1>
-                    </div>
                     <div className="content row flex">
                         {data.markdownRemark.frontmatter.image && (
                             <div className="center">
                                 <div className="img">
                                     <Img
-                                        fluid={
-                                            data.markdownRemark.frontmatter
-                                                .image.childImageSharp.fluid
-                                        }
+                                        fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
                                         style={{
-                                            "border-radius": "50%"
+                                            'border-radius': '50%',
                                         }}
                                     />
                                 </div>
@@ -37,12 +36,12 @@ export default function({ data }) {
                         <div
                             className="col s12 m11 l10"
                             dangerouslySetInnerHTML={{
-                                __html: data.markdownRemark.html
-                            }}
-                        ></div>
+                                __html: data.markdownRemark.html,
+                            }}></div>
+                        <MyTech />
                     </div>
                 </article>
-            </div>
+            </section>
         </Layout>
     );
 }

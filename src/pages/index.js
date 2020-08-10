@@ -99,7 +99,7 @@ class IndexPage extends React.Component {
                         <p className="tag-line text-secondary">{this.props.data.site.siteMetadata.introTag}</p>
                         <p className="caption text-tertiary">{this.props.data.site.siteMetadata.description}</p>
                         <a href="#portfolio" className="btn">
-                            SEE WORKS
+                            VIEW PROJECTS
                         </a>
                     </div>
                     <div className="social-buttons">
@@ -110,7 +110,7 @@ class IndexPage extends React.Component {
                 <About />
                 <section className="container">
                     <div className="section-title">
-                        <SectionTitle title="MY RECENT PROJECTS" style={{ padding: ' 0;' }} />
+                        <SectionTitle title="RECENT PROJECTS" style={{ padding: ' 0;' }} />
                     </div>
                 </section>
                 <PortfolioList />
@@ -137,10 +137,6 @@ export const query = graphql`
                     name
                     url
                     icon
-                }
-                logos {
-                    name
-                    logo
                 }
             }
         }

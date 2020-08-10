@@ -8,32 +8,32 @@ import MyTech from './MyTech';
 class About extends React.Component {
     render() {
         return (
-            <section className="container">
+            <section className="container" id="about">
                 <div className="section-title">
                     <SectionTitle title="ABOUT ME" />
-                    <div className="container">
-                        <article className="post">
-                            <div className="content row flex">
-                                <div className="center">
-                                    <div className="img">
-                                        <Img
-                                            fluid={this.props.file.childImageSharp.fluid}
-                                            style={{
-                                                'border-radius': '50%',
-                                            }}
-                                        />
-                                    </div>
+                </div>
+                <div className="container">
+                    <article className="post">
+                        <div className="content row flex">
+                            <div className="center">
+                                <div className="img">
+                                    <Img
+                                        fluid={this.props.file.childImageSharp.fluid}
+                                        style={{
+                                            'border-radius': '50%',
+                                        }}
+                                    />
                                 </div>
-
-                                <div
-                                    className="col s12 m11 l10"
-                                    dangerouslySetInnerHTML={{
-                                        __html: this.props.about.html,
-                                    }}></div>
-                                <MyTech />
                             </div>
-                        </article>
-                    </div>
+
+                            <div
+                                className="col s12 m11 l10"
+                                dangerouslySetInnerHTML={{
+                                    __html: this.props.about.html,
+                                }}></div>
+                            <MyTech />
+                        </div>
+                    </article>
                 </div>
             </section>
         );
@@ -70,6 +70,35 @@ export default () => (
                         aboutImage
                         introTag
                         description
+                    }
+                }
+                allMarkdownRemark(
+                    filter: { fileAbsolutePath: { regex: "/experience/" } }
+                    limit: 6
+                    sort: { fields: [frontmatter___date], order: DESC }
+                ) {
+                    edges {
+                        node {
+                            id
+                            frontmatter {
+                                title
+                                description
+                                date
+                                image {
+                                    publicURL
+                                    childImageSharp {
+                                        fluid(maxWidth: 1920) {
+                                            srcSet
+                                            ...GatsbyImageSharpFluid
+                                        }
+                                        id
+                                    }
+                                }
+                            }
+                            fields {
+                                slug
+                            }
+                        }
                     }
                 }
             }
