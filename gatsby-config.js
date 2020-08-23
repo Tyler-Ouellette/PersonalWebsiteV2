@@ -172,5 +172,28 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: `gatsby-plugin-dynatrace-dev`,
+            options: {
+                // include the Dynatrace JS Agent & enable tracking
+                enabled: true,
+                // your tenant id - part of the url e.g. https://YOUR_TENANT_ID.live.dynatrace.com
+                tenantId: `hhx85665`,
+                // the id of the application where the user actions should be tracked. Usually this will
+                // be the ID of a manually created "Agentless real user monitoring" application
+                applicationId: `APPLICATION-0DFA0DDB1BBCD935`,
+                // Dynatrace API Token, can be retrieve from Settings => Integration => Dynatrace API
+                apiToken: `BBpcsMDwTWibqESccIk_T`,
+                /*
+                 * How the JavaScript Agent should be embedded into the page
+                 * Available Modes:
+                 *  0 - One Agent JavaScript Tag => NOTE: Do NOT use, does not work currently
+                 *  1 - Asynchronous Code Snippet (~18KB)
+                 *  2 - Synchronous Code Snippet (~18KB)
+                 *  3 - Whole agent code inline (~120KB)
+                 */
+                mode: 1,
+            },
+        },
     ],
 };
