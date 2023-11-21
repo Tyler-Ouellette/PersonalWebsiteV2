@@ -5,7 +5,7 @@ let siteMetadata = {
     icon: `/images/tLogo.png`,
     titleImage: `/images/wall.jpg`,
     aboutImage: `/images/about.jpeg`,
-    introTag: `FULL STACK DEVELOPER / CONSULTANT`,
+    introTag: `SOLUTION'S ENGINEER / FULL STACK DEVELOPER`,
     description: `Never stop learning. `,
     author: `Tyler Ouellette`,
     experienceItemsPerPage: 10,
