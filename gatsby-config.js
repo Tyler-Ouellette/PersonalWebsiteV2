@@ -92,6 +92,7 @@ let siteMetadata = {
         description: `Please, feel free to contact me for job inquiries.`,
         mail: 'ouellette.tyler@hotmail.com',
         address: 'From: Windsor, Ontario',
+        phone: ''
     },
     about: {
         image: '/static/9586108cb6231fd8aa812ccca7df7032/8c675/resumePhoto.jpg',
