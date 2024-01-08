@@ -5,7 +5,7 @@ let siteMetadata = {
     icon: `/images/tLogo.png`,
     titleImage: `/images/wall.jpg`,
     aboutImage: `/images/about.jpeg`,
-    introTag: `SOLUTION'S ENGINEER / FULL STACK DEVELOPER`,
+    introTag: `SOLUTIONS ENGINEER / FULL STACK DEVELOPER`,
     description: `Never stop learning. `,
     author: `Tyler Ouellette`,
     experienceItemsPerPage: 10,
@@ -91,7 +91,6 @@ let siteMetadata = {
         api_url: './test.json',
         description: `Please, feel free to contact me for job inquiries.`,
         mail: 'ouellette.tyler@hotmail.com',
-        phone: '519 995-6808',
         address: 'From: Windsor, Ontario',
     },
     about: {
